@@ -15,20 +15,21 @@ ul
   list-style: none
 
 
+// ------------caruosel-style
 .carousel-caption
   position: relative
   left: 0
   right: 0
   text-shadow: none
   color: $gray-base
+  padding-bottom: 0
   .img-responsive
     display: inline-block
 
-// ------------caruosel-style
 .carousel-indicators
   &.vertical
     left: initial
-    top: 20%
+    top: 100px
     right: 3%
     width: 20px
     li
@@ -41,6 +42,26 @@ ul
     border-color: black
   .active
     border-color: $blue-sky
+
+#plane2
+  background: transparent url("../images/bg-img.jpg") no-repeat center center
+  height: 568px
+  background-size: 100%
+  .row
+    height: 100%
+    vertical-align: middle
+    display: table
+  .middle-text
+    float: none
+    vertical-align: middle
+    display: table-cell
+    h1
+      text-transform: uppercase
+      color: white
+      font-size: 50px
+
+.next
+  margin-bottom: 25px
 
 footer
   ul li
