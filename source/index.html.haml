@@ -2,4 +2,52 @@
 title: Welcome to My test page
 ---
 
-%h1 Welcome to this landing page
+#plane1
+  #myCarousel.carousel.slide{"data-interval" => "3000", "data-ride" => "carousel"}
+    / Carousel indicators
+    %ol.carousel-indicators
+      %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+      %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+      %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+    / Carousel items
+    .carousel-inner
+      .active.item
+        %h2 Slide 1
+        .carousel-caption
+          %img{alt: "", src: "http://euro.mediotiempo.com//media/2014/04/13/xmanny.jpg.pagespeed.ic.Bc3OVo_-WB.jpg"}
+          %h1 Lorem Ipsum Dolor Amel
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .item
+        %h2 Slide 2
+        .carousel-caption
+          %img{alt: "", src: "http://euro.mediotiempo.com//media/2014/04/13/xmanny.jpg.pagespeed.ic.Bc3OVo_-WB.jpg"}
+          %h1 Lorem Ipsum Dolor Amel
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .item
+        %h2 Slide 3
+        .carousel-caption
+          %img{alt: "", src: "http://euro.mediotiempo.com//media/2014/04/13/xmanny.jpg.pagespeed.ic.Bc3OVo_-WB.jpg"}
+          %h1 Lorem Ipsum Dolor Amel
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+    / Carousel nav
+    %a.carousel-control.left{"data-slide" => "prev", href: "#myCarousel"}
+      %span.glyphicon.glyphicon-chevron-left
+    %a.carousel-control.right{"data-slide" => "next", href: "#myCarousel"}
+      %span.glyphicon.glyphicon-chevron-right
+
+#plane2
+  %h1 Chillwave consectetur truck deserunt accusamus food
+#plane3
+  %h1 Chillwave consectetur truck deserunt accusamus food
+#plane4
+  %h1 Chillwave consectetur truck deserunt accusamus food
+#plane5
+  %h1 Chillwave consectetur truck deserunt accusamus food
+#footer
+  %ul
+    %li Facebook
+    %li Facebook
+    %li Facebook
+    %li Facebook
+
