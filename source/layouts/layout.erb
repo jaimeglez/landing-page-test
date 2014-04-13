@@ -14,6 +14,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <%= partial 'header' %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+    <%= partial 'footer' %>
   </body>
 </html>
