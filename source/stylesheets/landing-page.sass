@@ -2,11 +2,11 @@ html
   height: 100%
 
 body
-  background: #fff
+  background: white
   text-align: center
   font-family: arial
   font-size: 16px
-  color: #878787
+  color: $gray-base
 
 h1
   font-size: 40px
@@ -19,6 +19,28 @@ ul
   position: relative
   left: 0
   right: 0
+  text-shadow: none
+  color: $gray-base
+  .img-responsive
+    display: inline-block
+
+// ------------caruosel-style
+.carousel-indicators
+  &.vertical
+    left: initial
+    top: 20%
+    right: 3%
+    width: 20px
+    li
+      display: block
+      margin: 20px auto
+    li.active
+      margin: 20px auto
+  li
+    background: black
+    border-color: black
+  .active
+    border-color: $blue-sky
 
 footer
   ul li
