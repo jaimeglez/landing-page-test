@@ -1,0 +1,129 @@
+html
+  height: 100%
+
+body
+  background: white
+  text-align: center
+  font-family: arial
+  font-size: 16px
+  color: $gray-base
+  @media (max-width: 767px)
+    padding: 0px
+
+.container-fluid
+  overflow: hidden
+
+p
+  line-height: 24px
+
+h1
+  font-size: 40px
+
+ul
+  list-style: none
+
+
+// ------------caruosel-style
+.carousel-caption
+  position: relative
+  left: 0
+  right: 0
+  text-shadow: none
+  color: $gray-base
+  padding-bottom: 0
+  .img-responsive
+    display: inline-block
+
+.carousel-indicators
+  &.vertical
+    left: initial
+    top: 100px
+    right: 3%
+    width: 20px
+    li
+      display: block
+      margin: 20px auto
+    li.active
+      margin: 20px auto
+  li
+    background: black
+    border-color: black
+  .active
+    border-color: $blue-sky
+
+// ================Planes code
+#plane2, #plane4
+  background: transparent url("../images/bg-img.jpg") no-repeat center center
+  background-size: 100%
+  .row
+    height: 100%
+  .middle-text
+    width: 80%
+    margin: 17% auto
+    @media (max-width: 590px)
+      margin: 6% auto
+    h1
+      text-transform: uppercase
+      color: white
+      font-size: 50px
+      @media (max-width: 768px)
+        font-size: 26px
+
+#plane4
+  background: transparent url("../images/bg-img2.jpg") no-repeat center center
+  background-size: 100%
+
+#plane3
+  #first-ipad
+    img
+      margin-top: -250px
+  #second-ipad
+    h1
+      text-align: left
+      margin: 60px 0 20px
+  #thrid-ipad
+    img
+      +rotate(90deg)
+  h1
+    color: $gray-light
+  p
+    text-align: left
+
+#plane5
+  img
+    display: inline-block
+  .icons
+    margin: 80px 0 30px
+    li
+      display: inline-block
+      &:hover
+        +opacity(.8)
+        cursor: pointer
+  .row:last-child
+    margin-bottom: 200px
+
+// ----------------other buttons
+nav.controls
+  .carousel-control
+    z-index: 99
+    background: none
+
+.next
+  margin-bottom: 25px
+
+footer
+  border-top: 1px solid $gray-cc
+  padding: 40px
+  @media (max-width: 768px)
+    padding: 20px 0
+  ul
+    @media (max-width: 768px)
+      padding: 0
+      maring: 0
+    li
+      display: inline-block
+      width: 15%
+      cursor: pointer
+      @media (max-width: 768px)
+        width: initial
+

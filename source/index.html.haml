@@ -1,0 +1,163 @@
+---
+title: Welcome to My test page
+---
+
+#plane1
+  .row
+    #myCarousel.col-md-12.carousel.slide{"data-interval" => "3000", "data-ride" => "carousel"}
+      / Carousel indicators
+      %ol.carousel-indicators.vertical
+        %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+        %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+        %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+      / Carousel items
+      .carousel-inner
+        .active.item
+          -# %h2 Slide 1
+          .carousel-caption
+            .row
+              .col-md-12
+                %img.img-responsive{alt: "", src: "../images/ipad-logo.png"}
+            %h1 Lorem Ipsum Dolor Amel
+            .row
+              %p.col-md-6.col-md-offset-3
+                Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter.
+                Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial
+                Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave
+                food truck Echo Park Portland messenger bag nulla ethical belly.
+
+        .item
+          .carousel-caption
+            .row
+              .col-md-12
+                %img.img-responsive{alt: "", src: "../images/ipad-logo.png"}
+            %h1 Lorem Ipsum Dolor Amel
+            .row
+              %p.col-md-6.col-md-offset-3
+                Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter.
+                Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial
+                Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave
+                food truck Echo Park Portland messenger bag nulla ethical belly.
+
+        .item
+          .carousel-caption
+            .row
+              .col-md-12
+                %img.img-responsive{alt: "", src: "../images/ipad-logo.png"}
+            %h1 Lorem Ipsum Dolor Amel
+            .row
+              %p.col-md-6.col-md-offset-3
+                Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter.
+                Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial
+                Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave
+                food truck Echo Park Portland messenger bag nulla ethical belly.
+
+  .row
+    .next.scroll-place=link_to image_tag('../images/next-btn.png'), '#plane3'
+
+#plane2
+  .row
+    .middle-text
+      %h1 Chillwave consectetur truck deserunt accusamus food
+
+#plane3
+  .row
+    #carousel2.carousel.slide{"data-ride" => "carousel"}
+      %ol.carousel-indicators
+        %li{"data-slide-to" => "0", "data-target" => "#carousel2"}
+        %li{"data-slide-to" => "1", "data-target" => "#carousel2"}
+        %li.active{"data-slide-to" => "2", "data-target" => "#carousel2"}
+
+      .carousel-inner
+        .item
+          .carousel-caption
+            #first-ipad.row
+              .col-md-3.col-md-offset-7
+                %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+            #second-ipad.row
+              .col-md-4.col-md-offset-2
+                %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+              .col-md-5
+                .row
+                  .col-md-12
+                    %h1 Capturing Lifetime Moments
+                    %p
+                      Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter. Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial. Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave food truck Echo Park Portland messenger bag nulla ethical belly.
+                #thrid-ipad.row
+                  .col-md-12
+                    %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+
+        .item
+          .carousel-caption
+            #first-ipad.row
+              .col-md-3.col-md-offset-7
+                %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+            #second-ipad.row
+              .col-md-4.col-md-offset-2
+                %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+              .col-md-5
+                .row
+                  .col-md-12
+                    %h1 Capturing Lifetime Moments
+                    %p
+                      Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter. Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial. Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave food truck Echo Park Portland messenger bag nulla ethical belly.
+                #thrid-ipad.row
+                  .col-md-12
+                    %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+
+
+
+        .item.active
+          .carousel-caption
+            #first-ipad.row
+              .col-md-3.col-md-offset-7
+                %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+            #second-ipad.row
+              .col-md-4.col-md-offset-2
+                %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+              .col-md-5
+                .row
+                  .col-md-12
+                    %h1 Capturing Lifetime Moments
+                    %p
+                      Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter. Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial. Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave food truck Echo Park Portland messenger bag nulla ethical belly.
+                #thrid-ipad.row
+                  .col-md-12
+                    %img.img-responsive{alt: "", src: "../images/ipad-mini.png"}
+
+      %nav.controls
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel2"}
+          %span.glyphicon.glyphicon-chevron-left
+        %a.right.carousel-control{"data-slide" => "next", :href => "#carousel2"}
+          %span.glyphicon.glyphicon-chevron-right
+
+
+#plane4
+  .row
+    .middle-text
+      %h1 Chillwave consectetur truck deserunt accusamus food
+
+#plane5
+  .row
+    .col-md-12.text-center
+      %img.img-responsive{alt: "", src: "../images/ipads.jpg"}
+  .row
+    .col-md-6.col-md-offset-3
+      %ul.icons
+        %li
+          %img.img-responsive{alt: "", src: "../images/sound.png"}
+        %li
+          %img.img-responsive{alt: "", src: "../images/sound.png"}
+        %li
+          %img.img-responsive{alt: "", src: "../images/sound.png"}
+  .row
+    .col-md-6.col-md-offset-3
+      %h1 Engineered to impress
+  .row
+    .col-md-6.col-md-offset-3
+      %p
+        Ethnic ea incididunt excepteur, mustache organic cray church-key tofu typewriter.
+        Readymade selvage banjo beard fugiat, tofu Schlitz mustache bitters Banksy sartorial
+        Sint nihil letterpress, Marfa assumenda craft beer do sed consectetur. Chillwave
+        food truck Echo Park Portland messenger bag nulla ethical belly.
+
