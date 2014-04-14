@@ -43,9 +43,9 @@ ul
   .active
     border-color: $blue-sky
 
-#plane2
+#plane2, #plane4
   background: transparent url("../images/bg-img.jpg") no-repeat center center
-  height: 568px
+  height: 560px
   background-size: 100%
   .row
     height: 100%
@@ -60,8 +60,34 @@ ul
       color: white
       font-size: 50px
 
+#plane4
+  background: transparent url("../images/bg-img2.jpg") no-repeat center center
+
 .next
   margin-bottom: 25px
+
+nav.controls
+  .carousel-control
+    z-index: 99
+    background: none
+
+#plane3
+  #first-ipad
+    img
+      margin-top: -250px
+  #second-ipad
+    h1
+      text-align: left
+      margin: 60px 0 20px
+  #thrid-ipad
+    img
+      +rotate(90deg)
+
+  h1
+    color: $gray-light
+  p
+    text-align: left
+
 
 footer
   ul li
