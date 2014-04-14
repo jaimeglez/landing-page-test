@@ -7,6 +7,11 @@ body
   font-family: arial
   font-size: 16px
   color: $gray-base
+  @media (max-width: 767px)
+    padding: 0px
+
+.container-fluid
+  overflow: hidden
 
 p
   line-height: 24px
@@ -46,28 +51,27 @@ ul
   .active
     border-color: $blue-sky
 
+// ================Planes code
 #plane2, #plane4
   background: transparent url("../images/bg-img.jpg") no-repeat center center
-  height: 560px
   background-size: 100%
   .row
     height: 100%
-    vertical-align: middle
-    display: table
   .middle-text
-    float: none
-    vertical-align: middle
-    display: table-cell
+    width: 80%
+    margin: 17% auto
+    @media (max-width: 590px)
+      margin: 6% auto
     h1
       text-transform: uppercase
       color: white
       font-size: 50px
+      @media (max-width: 768px)
+        font-size: 26px
 
 #plane4
   background: transparent url("../images/bg-img2.jpg") no-repeat center center
-
-.next
-  margin-bottom: 25px
+  background-size: 100%
 
 #plane3
   #first-ipad
@@ -80,7 +84,6 @@ ul
   #thrid-ipad
     img
       +rotate(90deg)
-
   h1
     color: $gray-light
   p
@@ -99,16 +102,28 @@ ul
   .row:last-child
     margin-bottom: 200px
 
+// ----------------other buttons
 nav.controls
   .carousel-control
     z-index: 99
     background: none
 
+.next
+  margin-bottom: 25px
+
 footer
   border-top: 1px solid $gray-cc
   padding: 40px
-  ul li
-    display: inline-block
-    width: 15%
-    cursor: pointer
+  @media (max-width: 768px)
+    padding: 20px 0
+  ul
+    @media (max-width: 768px)
+      padding: 0
+      maring: 0
+    li
+      display: inline-block
+      width: 15%
+      cursor: pointer
+      @media (max-width: 768px)
+        width: initial
 
